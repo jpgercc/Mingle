@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #2f2f2f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cta-button {
+    background-color: #d4af37;
+    /* Dourado */
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+.cta-button:hover {
+    background-color: #b38c2e;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #e6e6e6;
+}
+
+.intro h1 {
+    font-size: 2.8rem;
+    color: #2f2f2f;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.features h2 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #2f2f2f;
+}
+
+.feature {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #d4af37;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2f2f2f;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
