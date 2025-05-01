@@ -26,6 +26,19 @@
         <p>Mingle é onde boas conversas geram amizades verdadeiras, autenticamente.</p>
     </section>
 
+    <section class="video-gallery">
+        <h2>Conheça mais sobre o Mingle</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/MGjU2NFSqkA" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/mQtFdEoMa7Q" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hDVhLd0Jj2M" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/nl1epwOlGCc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-controls">
+            <button onclick="prevVideo()">Anterior</button>
+            <button onclick="nextVideo()">Próximo</button>
+        </div>
+    </section>
 
 
     <section class="features">
@@ -40,6 +53,7 @@
             </p>
 
         </div>
+
         <div class="feature">
             <h3>Segurança e Privacidade em Primeiro Lugar</h3>
             <p>Você está no controle. Com Mingle, você tem a certeza de que suas interações são seguras, protegidas
@@ -61,6 +75,31 @@
     <footer>
         <p>© 2025 Mingle | Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const iframes = document.querySelectorAll('.video-container iframe');
+        let currentVideo = 0;
+
+        function showVideo(index) {
+            iframes.forEach((iframe, i) => {
+                iframe.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextVideo() {
+            currentVideo = (currentVideo + 1) % iframes.length;
+            showVideo(currentVideo);
+        }
+
+        function prevVideo() {
+            currentVideo = (currentVideo - 1 + iframes.length) % iframes.length;
+            showVideo(currentVideo);
+        }
+
+        // Mostra o primeiro vídeo ao carregar
+        showVideo(currentVideo);
+    </script>
+
 </body>
 
 </html>

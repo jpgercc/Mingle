@@ -1,16 +1,18 @@
+/* Reset e fontes base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
 }
 
+/* Cabeçalho e navegação */
 header {
     background: #2f2f2f;
     color: white;
@@ -23,6 +25,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -32,9 +36,9 @@ nav {
     text-transform: uppercase;
 }
 
+/* Botões CTA */
 .cta-button {
     background-color: #d4af37;
-    /* Dourado */
     color: white;
     border: none;
     padding: 12px 28px;
@@ -49,6 +53,7 @@ nav {
     background-color: #b38c2e;
 }
 
+/* Seção de introdução */
 .intro {
     text-align: center;
     padding: 60px 30px;
@@ -70,6 +75,61 @@ nav {
     color: #666;
 }
 
+/* Seção de vídeos */
+.video-gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.video-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.video-container iframe {
+    display: none;
+    width: 100%;
+    height: 315px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.video-container iframe.active {
+    display: block;
+}
+
+.video-controls {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.video-controls button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.video-controls button:hover {
+    background-color: #b38c2e;
+}
+
+/* Seção de recursos */
 .features {
     padding: 40px 20px;
     text-align: center;
@@ -81,11 +141,15 @@ nav {
     margin-bottom: 40px;
     font-weight: 600;
     color: #2f2f2f;
+    font-family: 'Playfair Display', serif;
 }
 
 .feature {
     margin-bottom: 30px;
     padding: 0 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature h3 {
@@ -93,6 +157,7 @@ nav {
     margin-bottom: 10px;
     font-weight: 600;
     color: #d4af37;
+    font-family: 'Playfair Display', serif;
 }
 
 .feature p {
@@ -100,6 +165,7 @@ nav {
     color: #555;
 }
 
+/* Seção final CTA */
 .cta {
     text-align: center;
     padding: 50px 20px;
@@ -107,12 +173,19 @@ nav {
     color: white;
 }
 
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
