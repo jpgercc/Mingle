@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entre em Contato - Mingle</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mingle</div>
+            <a href="index.html"><button class="cta-button">Voltar</button></a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Entre em Contato</h1>
+        <p>Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.</p>
+    </section>
+
+    <section class="contact-form">
+        <form action="https://formsubmit.co/SEU_EMAIL" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Botão do WhatsApp -->
+    <section class="whatsapp-section" style="text-align: center; margin-top: 30px;">
+        <a href="https://wa.me/5551991823420?text=Olá, estou entrando em contato através do formulário do Mingle. Podemos conversar?"
+            target="_blank">
+            <button class="cta-button">Enviar mensagem pelo WhatsApp</button>
+        </a>
+    </section>
+
+    <br>
+
+    <footer>
+        <p>© 2025 Mingle | Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
